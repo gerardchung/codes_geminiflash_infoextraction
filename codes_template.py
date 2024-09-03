@@ -9,6 +9,7 @@ import csv
 import google.generativeai as genai
 from docx import Document
 from tqdm import tqdm
+import time
 
 # You need an API key from Google -> get it for free!
 # Copy the key in by replace "YOUR_API_KEY_HERE"
@@ -39,6 +40,9 @@ def process_documents(folder_path, prompt, output_csv):
         document_text = extract_text_from_docx(doc_path)
         response = generate_response(prompt, document_text)
         results.append({"Document": doc_file, "Response": response})
+
+    # put in 1.1 second wait between each api call to avoid hitting the rate limits
+    time.sleep(1.1)
 
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Document', 'Response']
