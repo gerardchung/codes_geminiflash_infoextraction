@@ -5,7 +5,6 @@
 # pip install python-dotenv
 
 
-import os
 import csv
 import google.generativeai as genai
 from docx import Document
