@@ -28,6 +28,9 @@ def generate_response(prompt, document_text):
     model = genai.GenerativeModel('gemini-1.5-flash')
     full_prompt = f"Document content: {document_text}\n\nPrompt: {prompt}\n\nResponse:"
     response = model.generate_content(full_prompt)
+
+    time.sleep(4.2)  # 15 calls per min. So if files are less than 15, take this away
+
     return response.text
 
 
@@ -41,8 +44,7 @@ def process_documents(folder_path, prompt, output_csv):
         response = generate_response(prompt, document_text)
         results.append({"Document": doc_file, "Response": response})
 
-    # put in 1.1 second wait between each api call to avoid hitting the rate limits
-    time.sleep(1.1)
+
 
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Document', 'Response']
