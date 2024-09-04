@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8dfab50-1b8b-4ff1-b6ca-9e8243dea552" name="Changes" comment="add in a time wait of 1.1s">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes_template.py" afterDir="false" />
-    </list>
+    <list default="true" id="a8dfab50-1b8b-4ff1-b6ca-9e8243dea552" name="Changes" comment="add in a time wait" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +89,7 @@
       <updated>1725362709118</updated>
       <workItem from="1725362710749" duration="1332000" />
       <workItem from="1725364805793" duration="68000" />
-      <workItem from="1725451807042" duration="9000" />
+      <workItem from="1725451807042" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -127,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725364868693</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add in a time wait">
+      <option name="closed" value="true" />
+      <created>1725451825415</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725451825415</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +141,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="remove os" />
     <MESSAGE value="add in a time wait of 1.1s" />
-    <option name="LAST_COMMIT_MESSAGE" value="add in a time wait of 1.1s" />
+    <MESSAGE value="add in a time wait" />
+    <option name="LAST_COMMIT_MESSAGE" value="add in a time wait" />
   </component>
 </project>

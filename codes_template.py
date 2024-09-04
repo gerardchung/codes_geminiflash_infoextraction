@@ -29,7 +29,7 @@ def generate_response(prompt, document_text):
     full_prompt = f"Document content: {document_text}\n\nPrompt: {prompt}\n\nResponse:"
     response = model.generate_content(full_prompt)
 
-    time.sleep(4.2)  # 15 calls per min. So if files are less than 15, take this away
+    time.sleep(4.2)  # API limits: max 15 calls per min. So if files are less than 15, take this away
 
     return response.text
 
